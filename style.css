@@ -1,0 +1,128 @@
+:root {
+	--body-bg-color: #09090a;
+	--text-color: #fff;
+	--font-inter: "Inter", sans-serif;
+	--font-roboto-mono: "Roboto Mono", monospace;
+	--purple-color: #8b5cf6;
+	--checkbox-border: #27272a;
+	--checkbox-border-check: #a78bfa;
+	--checkbox-bg: #18181b;
+	--date-color: #a1a1aa;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+	color: var(--text-color);
+}
+
+body {
+	height: 100vh;
+	color: var(--text-color);
+	background-color: var(--body-bg-color);
+}
+
+header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20px;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	background-color: #09090ae2;
+}
+
+header button {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	padding: 16px 24px;
+	font-family: var(--font-inter);
+	font-size: 16px;
+	font-weight: 600;
+	border: 2px solid var(--purple-color);
+	border-radius: 8px;
+	background: transparent;
+	cursor: pointer;
+
+	user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+}
+
+input {
+	appearance: none;
+	width: 54px;
+	height: 54px;
+	border: 2px solid var(--checkbox-border);
+	border-radius: 8px;
+	background-color: var(--checkbox-bg);
+}
+
+input:checked {
+	border: 2px solid var(--checkbox-border-check);
+	background-color: var(--purple-color);
+}
+
+.form-habits {
+	display: flex;
+	align-items: center;
+	padding: 182px 48px 48px;
+	width: fit-content;
+
+	user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+}
+
+.habits {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+	margin-top: 56px;
+}
+
+.habit {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 54px;
+	height: 54px;
+	font-size: 32px;
+}
+
+.days {
+	display: flex;
+	gap: 48px;
+	margin-left: 32px;
+}
+
+.day {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 24px;
+}
+
+.day div {
+	font-family: var(--font-roboto-mono);
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 25px;
+	color: var(--date-color);
+	margin-bottom: 8px;
+}
+
+.day input {
+	cursor: pointer;
+}
+
+@media (max-width: 450px) {
+	header button span {
+		display: none;
+	}
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Roboto+Mono:wght@700&display=swap"
+			rel="stylesheet"
+		/>
+
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link rel="stylesheet" href="style.css" />
+
+		<title>Habits - NLWSetup</title>
+	</head>
+	<body>
+		<header>
+			<img src="assets/logo.svg" alt="logo" />
+
+			<button>
+				<img src="assets/plus-sign.svg" alt="plus-sign" />
+				<span>Registrar meu dia</span>
+			</button>
+		</header>
+
+		<main>
+			<form class="form-habits">
+				<div class="habits">
+					<div class="habit" data-name="wake_up" title="Acordar ás 09:30">
+						⏰
+					</div>
+
+					<div
+						class="habit"
+						data-name="brushing_teeth"
+						title="Escovar os dentes e molhar o rosto"
+					>
+						🦷
+					</div>
+
+					<div class="habit" data-name="breakfast" title="Tomar café da manhã">
+						☕
+					</div>
+
+					<div class="habit" data-name="study" title="Estudar">📚</div>
+
+					<div class="habit" data-name="have_lunch" title="Almoçar">🍛</div>
+				</div>
+
+				<div class="days"></div>
+			</form>
+		</main>
+
+		<script src="https://cdn.jsdelivr.net/gh/maykbrito/libs/NLWSetup/source/NLWSetup.js"></script>
+		<script src="main.js"></script>
+	</body>
+</html>
